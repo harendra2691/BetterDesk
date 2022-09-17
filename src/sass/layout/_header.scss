@@ -1,0 +1,15 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  .wrapper {
+    padding: 27px 0;
+  }
+  .logo {
+    display: inline-block;
+  }
+  .bd-logo {
+    width: 124px;
+    height: 24px;
+  }
+}

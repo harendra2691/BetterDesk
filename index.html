@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>BetterDesk</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="wrapper">
+          <a href="javascript:void(0)" class="logo"
+            ><img
+              class="bd-logo"
+              src="/src/images/betterDesk_logo.png"
+              alt="betterDesk-logo"
+          /></a>
+
+          <nav class="header__nav">
+            <input id="toggle" type="checkbox" onclick="disableScroll()" />
+            <label for="toggle" class="menu-button-container">
+              <span class="menu-button"></span>
+            </label>
+            <ul class="nav-items">
+              <li><a href="javascript:void(0)">Home</a></li>
+              <li><a href="javascript:void(0)">Products</a></li>
+              <li><a href="javascript:void(0)">Demo</a></li>
+              <li><a href="javascript:void(0)">Resources</a></li>
+              <li><a href="javascript:void(0)">Sign In</a></li>
+              <li><a href="javascript:void(0)" class="sign-up">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <article>
+            <h1 class="title-lg">
+              Build a<br />company your<br />customers love.
+            </h1>
+            <form onsubmit="return false">
+              <input type="email" placeholder="Enter your work email" />
+              <button class="sign_up-btn">Sign Up</button>
+            </form>
+          </article>
+        </div>
+        <div class="hero-bg">
+          <img src="/src/images/hero_bg.png" alt="background-pic" />
+        </div>
+      </section>
+      <section class="logos">
+        <ul class="container">
+          <li><img src="/src/images/logo-1.png" /></li>
+          <li><img src="/src/images/logo-2.png" /></li>
+          <li><img src="/src/images/logo-3.png" /></li>
+          <li><img src="/src/images/logo-4.png" /></li>
+          <li><img src="/src/images/logo-5.png" /></li>
+        </ul>
+      </section>
+      <section class="get-support">
+        <div class="container">
+          <h3 class="heading-lg">
+            Let's make customer support interaction more human & more reliable.
+          </h3>
+          <ul>
+            <li>
+                <img src="/src/images/support.png" alt="suppot"/>
+            </li>
+            <li>
+                <img src="/src/images/help_desk.png" alt="suppot"/>
+            </li>
+            <li>
+                <img src="/src/images/chat.png" alt="suppot"/>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
