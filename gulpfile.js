@@ -43,7 +43,12 @@ function webpImage() {
         .pipe(imagewebp())
         .pipe(dest('dist/images'))
 }
+// fonts
 
+function font(){
+    return src('src/fonts/**/*')
+    .pipe(dest('dist/fonts'))
+}
 
 // create watchtask
 function watchTask(){
@@ -61,6 +66,7 @@ function watchTask(){
 
 // default gulp
 exports.default = series(
+    font,
     compilescss,
     jsmin,
     optimizeimg,
