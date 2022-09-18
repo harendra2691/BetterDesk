@@ -42,9 +42,9 @@
             <h1 class="title-lg">
               Build a<br />company your<br />customers love.
             </h1>
-            <form onsubmit="return false">
+            <form onsubmit="return false" class="form hero__form">
               <input type="email" placeholder="Enter your work email" />
-              <button class="sign_up-btn">Sign Up</button>
+              <button class="sign_up-btn style-bold">Sign Up</button>
             </form>
           </article>
         </div>
@@ -54,31 +54,379 @@
       </section>
       <section class="logos">
         <ul class="container">
-          <li><img src="dist/images/logo-1.webp" /></li>
-          <li><img src="dist/images/logo-2.webp" /></li>
-          <li><img src="dist/images/logo-3.webp" /></li>
-          <li><img src="dist/images/logo-4.webp" /></li>
-          <li><img src="dist/images/logo-5.webp" /></li>
+          <li>
+            <a href="javascript:void(0)" class="logo"
+              ><img src="dist/images/logo-1.webp"
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="logo"
+              ><img src="dist/images/logo-2.webp"
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="logo"
+              ><img src="dist/images/logo-3.webp"
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="logo"
+              ><img src="dist/images/logo-4.webp"
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="logo"
+              ><img src="dist/images/logo-5.webp"
+            /></a>
+          </li>
         </ul>
       </section>
       <section class="get-support">
         <div class="container">
           <h3 class="heading-lg">
-            Let's make customer support interaction more human & more reliable.
+            Let's make customer support interaction<br />
+            <span class="style-bold">more human</span> &
+            <span class="style-bold">more reliable.</span>
           </h3>
-          <ul>
+          <ul class="support-type">
             <li>
-              <img src="dist/images/support.webp" alt="suppot" />
+              <picture>
+                <source
+                  srcset="
+                    dist/images/support.webp    1x,
+                    dist/images/support@2x.webp 2x
+                  " />
+                <img src="dist/images/support.webp" alt="suppot" class="call"
+              /></picture>
+              <h6 class="support-type__heading">Support</h6>
+              <p class="text">
+                Vestibulum rutrum quam vitae<br />fringilla tincid.
+              </p>
+              <p class="lrn-more">
+                <a href="javascript:void(0)">Learn More ></a>
+              </p>
             </li>
             <li>
-              <img src="dist/images/help_desk.webp" alt="suppot" />
+              <picture>
+                <source
+                  srcset="
+                    dist/images/help_desk.webp    1x,
+                    dist/images/help_desk@2x.webp 2x
+                  " />
+                <img
+                  src="dist/images/help_desk.webp"
+                  alt="suppot"
+                  class="help-desk"
+              /></picture>
+              <h6 class="support-type__heading">Help Desk</h6>
+              <p class="text">
+                Cras quis nulla commodo,<br />aliquam lectus sed.
+              </p>
+              <p class="lrn-more">
+                <a href="javascript:void(0)">Learn More ></a>
+              </p>
             </li>
             <li>
-              <img src="dist/images/chat.webp" alt="suppot" />
+              <picture>
+                <source
+                  srcset="
+                    dist/images/chat.webp    1x,
+                    dist/images/chat@2x.webp 2x
+                  " />
+                <img src="dist/images/chat.webp" alt="suppot" class="chat"
+              /></picture>
+              <h6 class="support-type__heading">Chat</h6>
+              <p class="text">
+                Fusce vehicula dolor arcu,<br />sit amet blandit dolor.
+              </p>
+              <p class="lrn-more">
+                <a href="javascript:void(0)">Learn More ></a>
+              </p>
             </li>
           </ul>
         </div>
       </section>
+      <section class="why-betterDesk">
+        <div class="container">
+          <h2 class="title-sm">Why BetterDesk</h2>
+          <p class="text-lg">
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+            viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+            ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+            ligula. Maecenas eu varius risus, eu aliquet arcu.
+          </p>
+
+          <div>
+            <article>
+              <div class="grow-business">
+                <h5 class="heading-sm">Support for growing business</h5>
+                <p class="text">
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor. Pellentesque non dignissim neque. Ut porta.
+                </p>
+              </div>
+              <p class="heading-sm atoll-color">
+                1 billion interactions per year<br />Minimal effort<br />Maximum
+                knowledge
+              </p>
+            </article>
+            <figure>
+              <img src="dist/images/to-do-list.webp" alt="to-do-list" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="container">
+          <h2 class="title-sm">Learn More About Us</h2>
+          <ul class="card-container">
+            <li class="card">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/about_us-1.webp    1x,
+                    dist/images/about_us-1@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/about_us-1.webp" alt="about-us-img" />
+              </picture>
+              <p class="text-lg">Vestibulum rutrum quam vitae fringilla.</p>
+              <p class="lrn-more">
+                <a href="javascript:void(0)">Learn More ></a>
+              </p>
+            </li>
+            <li class="card">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/about_us-2.webp    1x,
+                    dist/images/about_us-2@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/about_us-2.webp" alt="about-us-img" />
+              </picture>
+              <p class="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscin.
+              </p>
+              <p class="lrn-more">
+                <a href="javascript:void(0)">Learn More ></a>
+              </p>
+            </li>
+            <li class="card">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/about_us-3.webp    1x,
+                    dist/images/about_us-3@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/about_us-3.webp" alt="about-us-img" />
+              </picture>
+              <p class="text-lg">Fusce vehicula dolor arcu, sit amet blan.</p>
+              <p class="lrn-more">
+                <a href="javascript:void(0)">Learn More ></a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gartner">
+        <div class="container">
+          <p class="gartner__heading">
+            <span class="style-bold">BetterDesk</span> is recognized as top
+            Unified Communications<br />provider in 2016 Magic Quandrant
+          </p>
+          <p class="text"><a href="javascript:void(0)">Read Report</a></p>
+          <picture>
+            <source
+              srcset="
+                dist/images/gartner_logo.webp    1x,
+                dist/images/gartner_logo@2x.webp 2x
+              "
+            />
+            <img src="dist/images/gartner_logo.webp" alt="about-us-img" />
+          </picture>
+        </div>
+      </section>
+      <section class="customer-review">
+        <article>
+          <div class="container">
+            <h2 class="title-sm">
+              “When BetterDesk was introduced, our business grows a lot —
+              Strongly recommend.”
+            </h2>
+            <p class="text-lg">Sharon Herrera at Buffer</p>
+            <a href="javascript:void(0)" class="play-icon"><i></i></a>
+          </div>
+        </article>
+        <ul class="user-container container">
+          <li class="user">
+            <a href="javascript:void(0)">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/userpic_1.webp    1x,
+                    dist/images/userpic_1@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/userpic_1.webp" alt="buffer-userpic" />
+              </picture>
+              <div class="user__about">
+                <p class="text-lg">Sharon Herrera</p>
+                <img src="/dist/images/logo-4.webp" />
+              </div>
+            </a>
+          </li>
+          <li class="user">
+            <a href="javascript:void(0)">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/userpic_2.webp    1x,
+                    dist/images/userpic_2@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/userpic_2.webp" alt="grubhub-userpic" />
+              </picture>
+              <div class="user__about">
+                <p class="text-lg">Diana Moreno</p>
+                <img src="/dist/images/logo-2.webp" />
+              </div>
+            </a>
+          </li>
+          <li class="user">
+            <a href="javascript:void(0)">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/userpic_3.webp    1x,
+                    dist/images/userpic_3@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/userpic_3.webp" alt="basecamp-userpic" />
+              </picture>
+              <div class="user__about">
+                <p class="text-lg">Diane Tran</p>
+                <img src="/dist/images/logo-1.webp" />
+              </div>
+            </a>
+          </li>
+          <li class="user">
+            <a href="javascript:void(0)">
+              <picture>
+                <source
+                  srcset="
+                    dist/images/userpic_4.webp    1x,
+                    dist/images/userpic_4@2x.webp 2x
+                  "
+                />
+                <img src="dist/images/userpic_4.webp" alt="trello-userpic" />
+              </picture>
+              <div class="user__about">
+                <p class="text-lg">Julia Wilson</p>
+                <img src="/dist/images/logo-3.webp" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="sign-up">
+        <div class="container">
+          <h2 class="title-sm">Great Products Deliver Happiness to Users</h2>
+          <form class="form sign-up__form" onsubmit="return false">
+            <input type="email" placeholder="Enter your work email" />
+            <button class="sign_up-btn style-bold">Sign Up</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <figure>
+          <a href="javascript:void(0)" class="logo">
+            <picture>
+              <source
+                srcset="
+                  dist/images/betterDesk_logo.webp    1x,
+                  dist/images/betterDesk_logo@2x.webp 2x
+                "
+              />
+              <img
+                src="dist/images/betterDesk_logo.webp"
+                alt="trello-userpic"
+              />
+            </picture>
+          </a>
+          <figcaption class="links__main creator-info">
+            This template is created by<br /><a href="javascript:void(0)"
+              >@iamjoannajiang</a
+            >. UX Designer @<br /><a href="javascript:void(0)" class="email"
+              >www.betterdesign.io</a
+            >
+          </figcaption>
+        </figure>
+        <div class="links-container">
+          <ul class="links">
+            <li class="links__title">About</li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Our Mission</a>
+            </li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Company</a>
+            </li>
+            <li class="links__main"><a href="javascript:void(0)">Jobs</a></li>
+            <li class="links__main"><a href="javascript:void(0)">Blog</a></li>
+          </ul>
+          <ul class="links">
+            <li class="links__title">Support</li>
+            <li class="links__main"><a href="javascript:void(0)">FAQ</a></li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Help Center</a>
+            </li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Terms of Service</a>
+            </li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Privacy Policy</a>
+            </li>
+          </ul>
+          <ul class="links">
+            <li class="links__title">Contact</li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Email Us</a>
+            </li>
+            <li class="links__main">
+              <a href="javascript:void(0)">Live Chat</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <a href="javascript:void(0)"
+            ><img src="dist/images/twitter.webp" alt="twitter"
+          /></a>
+          <a href="javascript:void(0)"
+            ><img src="dist/images/facebook.webp" alt="facebook"
+          /></a>
+          <a href="javascript:void(0)"
+            ><img src="dist/images/linkedin.webp" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="thanks-msg">
+            Thank you for downloading BetterDesk Sketch template. You are
+            invited to join 1300+ designers on
+            <span class="style-bold">UX Design Community</span> on
+            <span class="style-bold">Slack</span> at
+            <a href="javascript:void(0)" class="email"
+              >www.uxdesigncommunity.com</a
+            >
+          </p>
+          <p class="thanks-msg">We look forward to see you there!</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
