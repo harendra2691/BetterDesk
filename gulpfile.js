@@ -44,7 +44,6 @@ function webpImage() {
         .pipe(dest('dist/images'))
 }
 // fonts
-
 function font(){
     return src('src/fonts/**/*')
     .pipe(dest('dist/fonts'))

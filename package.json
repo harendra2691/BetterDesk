@@ -29,6 +29,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.11",
     "cssnano": "^5.1.13",
+    "include-media": "^1.4.10",
     "sass": "^1.54.9"
   }
 }
