@@ -21,11 +21,11 @@ function compilescss(){
 }
 
 // js
-function jsmin(){
-    return src('src/js/*.js')
-        .pipe(terser())
-        .pipe(dest('dist/js'))
-}
+// function jsmin(){
+//     return src('src/js/*.js')
+//         .pipe(terser())
+//         .pipe(dest('dist/js'))
+// }
 
 // images
 function optimizeimg(){
@@ -57,7 +57,7 @@ function watchTask(){
         }
     });
     watch('src/sass/**/*.scss', compilescss);
-    watch('src/js/*.js', jsmin);
+    // watch('src/js/*.js', jsmin);
     watch('src/images/*.{jpg,png}', optimizeimg);
     watch('dist/images/*.{jpg,png}', webpImage)
     watch('./*.html').on('change', browserSync.reload);
@@ -67,7 +67,7 @@ function watchTask(){
 exports.default = series(
     font,
     compilescss,
-    jsmin,
+    // jsmin,
     optimizeimg,
     webpImage,
     watchTask

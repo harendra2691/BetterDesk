@@ -14,7 +14,7 @@
           <a href="javascript:void(0)" class="logo"
             ><img
               class="bd-logo"
-              src="dist/images/betterDesk_logo.webp"
+              src="dist/images/betterDesk_logo.png"
               alt="betterDesk-logo"
           /></a>
 
@@ -42,41 +42,53 @@
             <h1 class="title-lg">
               Build a<br />company your<br />customers love.
             </h1>
-            <form onsubmit="return false" class="form hero__form">
-              <input type="email" placeholder="Enter your work email" />
-              <button class="sign_up-btn style-bold">Sign Up</button>
+            <form onsubmit="return false" class="form-one">
+              <input
+                type="email"
+                placeholder="Enter your work email"
+                class="email-input"
+              />
+              <input
+                type="submit"
+                value="Sign Up"
+                class="style-bold sign_up-btn"
+              />
             </form>
           </article>
         </div>
         <div class="hero-bg">
-          <img src="dist/images/hero_bg.webp" alt="background-pic" />
+          <source srcset="dist/images/hero-bg@2x.webp" />
+          <source
+            srcset="dist/images/hero-bg.png 1x, dist/images/hero-bg@2x.png 2x"
+          />
+          <img src="dist/images/hero_bg.png" alt="background-pic" />
         </div>
       </section>
       <section class="logos">
         <ul class="container">
           <li>
             <a href="javascript:void(0)" class="logo"
-              ><img src="dist/images/logo-1.webp"
+              ><img src="dist/images/logo-1.png"
             /></a>
           </li>
           <li>
             <a href="javascript:void(0)" class="logo"
-              ><img src="dist/images/logo-2.webp"
+              ><img src="dist/images/logo-2.png"
             /></a>
           </li>
           <li>
             <a href="javascript:void(0)" class="logo"
-              ><img src="dist/images/logo-3.webp"
+              ><img src="dist/images/logo-3.png"
             /></a>
           </li>
           <li>
             <a href="javascript:void(0)" class="logo"
-              ><img src="dist/images/logo-4.webp"
+              ><img src="dist/images/logo-4.png"
             /></a>
           </li>
           <li>
             <a href="javascript:void(0)" class="logo"
-              ><img src="dist/images/logo-5.webp"
+              ><img src="dist/images/logo-5.png"
             /></a>
           </li>
         </ul>
@@ -90,14 +102,17 @@
           </h3>
           <ul class="support-type">
             <li>
-              <picture>
-                <source
-                  srcset="
-                    dist/images/support.webp    1x,
-                    dist/images/support@2x.webp 2x
-                  " />
-                <img src="dist/images/support.webp" alt="suppot" class="call"
-              /></picture>
+              <div class="picture-bg call">
+                <picture>
+                  <source srcset="dist/images/support@2x.webp 2x" />
+                  <source
+                    srcset="
+                      dist/images/support.png    1x,
+                      dist/images/support@2x.png 2x
+                    " />
+                  <img src="dist/images/support.png" alt="suppot"
+                /></picture>
+              </div>
               <h6 class="support-type__heading">Support</h6>
               <p class="text">
                 Vestibulum rutrum quam vitae<br />fringilla tincid.
@@ -109,17 +124,17 @@
               </p>
             </li>
             <li>
-              <picture>
-                <source
-                  srcset="
-                    dist/images/help_desk.webp    1x,
-                    dist/images/help_desk@2x.webp 2x
-                  " />
-                <img
-                  src="dist/images/help_desk.webp"
-                  alt="suppot"
-                  class="help-desk"
-              /></picture>
+              <div class="picture-bg help-desk">
+                <picture>
+                  <source srcset="dist/images/help_desk@2x.webp 2x" />
+                  <source
+                    srcset="
+                      dist/images/help_desk.png    1x,
+                      dist/images/help_desk@2x.png 2x
+                    " />
+                  <img src="dist/images/help_desk.png" alt="suppot"
+                /></picture>
+              </div>
               <h6 class="support-type__heading">Help Desk</h6>
               <p class="text">
                 Cras quis nulla commodo,<br />aliquam lectus sed.
@@ -131,14 +146,17 @@
               </p>
             </li>
             <li>
-              <picture>
-                <source
-                  srcset="
-                    dist/images/chat.webp    1x,
-                    dist/images/chat@2x.webp 2x
-                  " />
-                <img src="dist/images/chat.webp" alt="suppot" class="chat"
-              /></picture>
+              <div class="picture-bg chat">
+                <picture>
+                  <source srcset="dist/images/chat@2x.webp 2x" />
+                  <source
+                    srcset="
+                      dist/images/chat.png    1x,
+                      dist/images/chat@2x.png 2x
+                    " />
+                  <img src="dist/images/chat.png" alt="suppot" class="chat"
+                /></picture>
+              </div>
               <h6 class="support-type__heading">Chat</h6>
               <p class="text">
                 Fusce vehicula dolor arcu,<br />sit amet blandit dolor.
@@ -189,13 +207,14 @@
           <ul class="card-container">
             <li class="card">
               <picture>
+                <source srcset="dist/images/about_us-1@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/about_us-1.webp    1x,
-                    dist/images/about_us-1@2x.webp 2x
+                    dist/images/about_us-1.png    1x,
+                    dist/images/about_us-1@2x.png 2x
                   "
                 />
-                <img src="dist/images/about_us-1.webp" alt="about-us-img" />
+                <img src="dist/images/about_us-1.png" alt="about-us-img" />
               </picture>
               <p class="text-lg">
                 Vestibulum rutrum quam vitae<br />fringilla.
@@ -208,13 +227,14 @@
             </li>
             <li class="card">
               <picture>
+                <source srcset="dist/images/about_us-2@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/about_us-2.webp    1x,
-                    dist/images/about_us-2@2x.webp 2x
+                    dist/images/about_us-2.png    1x,
+                    dist/images/about_us-2@2x.png 2x
                   "
                 />
-                <img src="dist/images/about_us-2.webp" alt="about-us-img" />
+                <img src="dist/images/about_us-2.png" alt="about-us-img" />
               </picture>
               <p class="text-lg">
                 Lorem ipsum dolor sit amet, consectetur<br />adipiscin.
@@ -227,13 +247,14 @@
             </li>
             <li class="card">
               <picture>
+                <source srcset="dist/images/about_us-3@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/about_us-3.webp    1x,
-                    dist/images/about_us-3@2x.webp 2x
+                    dist/images/about_us-3.png    1x,
+                    dist/images/about_us-3@2x.png 2x
                   "
                 />
-                <img src="dist/images/about_us-3.webp" alt="about-us-img" />
+                <img src="dist/images/about_us-3.png" alt="about-us-img" />
               </picture>
               <p class="text-lg">
                 Fusce vehicula dolor arcu, sit<br />amet blan.
@@ -257,13 +278,14 @@
             <p class="text"><a href="javascript:void(0)">Read Report</a></p>
           </div>
           <picture>
+            <source srcset="dist/images/gartner_logo@2x.webp 2x" />
             <source
               srcset="
-                dist/images/gartner_logo.webp    1x,
-                dist/images/gartner_logo@2x.webp 2x
+                dist/images/gartner_logo.png    1x,
+                dist/images/gartner_logo@2x.png 2x
               "
             />
-            <img src="dist/images/gartner_logo.webp" alt="about-us-img" />
+            <img src="dist/images/gartner_logo.png" alt="about-us-img" />
           </picture>
         </div>
       </section>
@@ -271,7 +293,7 @@
         <article>
           <div class="container">
             <h2 class="title-sm">
-              “When BetterDesk was introduced, our business grows a lot —
+              “When BetterDesk was introduced, our business<br />grows a lot —
               Strongly recommend.”
             </h2>
             <p class="text-lg">Sharon Herrera at Buffer</p>
@@ -282,13 +304,14 @@
           <li class="user">
             <a href="javascript:void(0)">
               <picture>
+                <source srcset="dist/images/userpic_1@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/userpic_1.webp    1x,
-                    dist/images/userpic_1@2x.webp 2x
+                    dist/images/userpic_1.png    1x,
+                    dist/images/userpic_1@2x.png 2x
                   "
                 />
-                <img src="dist/images/userpic_1.webp" alt="buffer-userpic" />
+                <img src="dist/images/userpic_1.png" alt="buffer-userpic" />
               </picture>
               <div class="user__about">
                 <p class="text-lg">Sharon Herrera</p>
@@ -299,13 +322,14 @@
           <li class="user">
             <a href="javascript:void(0)">
               <picture>
+                <source srcset="dist/images/userpic_2@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/userpic_2.webp    1x,
-                    dist/images/userpic_2@2x.webp 2x
+                    dist/images/userpic_2.png    1x,
+                    dist/images/userpic_2@2x.png 2x
                   "
                 />
-                <img src="dist/images/userpic_2.webp" alt="grubhub-userpic" />
+                <img src="dist/images/userpic_2.png" alt="grubhub-userpic" />
               </picture>
               <div class="user__about">
                 <p class="text-lg">Diana Moreno</p>
@@ -316,13 +340,14 @@
           <li class="user">
             <a href="javascript:void(0)">
               <picture>
+                <source srcset="dist/images/userpic_3@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/userpic_3.webp    1x,
-                    dist/images/userpic_3@2x.webp 2x
+                    dist/images/userpic_3.png    1x,
+                    dist/images/userpic_3@2x.png 2x
                   "
                 />
-                <img src="dist/images/userpic_3.webp" alt="basecamp-userpic" />
+                <img src="dist/images/userpic_3.png" alt="basecamp-userpic" />
               </picture>
               <div class="user__about">
                 <p class="text-lg">Diane Tran</p>
@@ -333,13 +358,14 @@
           <li class="user">
             <a href="javascript:void(0)">
               <picture>
+                <source srcset="dist/images/userpic_4@2x.webp 2x" />
                 <source
                   srcset="
-                    dist/images/userpic_4.webp    1x,
-                    dist/images/userpic_4@2x.webp 2x
+                    dist/images/userpic_4.png    1x,
+                    dist/images/userpic_4@2x.png 2x
                   "
                 />
-                <img src="dist/images/userpic_4.webp" alt="trello-userpic" />
+                <img src="dist/images/userpic_4.png" alt="trello-userpic" />
               </picture>
               <div class="user__about">
                 <p class="text-lg">Julia Wilson</p>
@@ -352,9 +378,17 @@
       <section class="sign-up">
         <div class="container">
           <h2 class="title-sm">Great Products Deliver Happiness to Users</h2>
-          <form class="form sign-up__form" onsubmit="return false">
-            <input type="email" placeholder="Enter your work email" />
-            <button class="sign_up-btn style-bold">Sign Up</button>
+          <form class=" form-two" onsubmit="return false">
+            <input
+              type="email"
+              placeholder="Enter your work email"
+              class="email-input"
+            />
+            <input
+              type="submit"
+              value="Sign Up"
+              class="style-bold sign_up-btn"
+            />
           </form>
         </div>
       </section>
@@ -364,16 +398,14 @@
         <figure>
           <a href="javascript:void(0)" class="logo">
             <picture>
+              <source srcset="dist/images/betterDesk_logo@2x.webp 2x" />
               <source
                 srcset="
-                  dist/images/betterDesk_logo.webp    1x,
-                  dist/images/betterDesk_logo@2x.webp 2x
+                  dist/images/betterDesk_logo.png    1x,
+                  dist/images/betterDesk_logo@2x.png 2x
                 "
               />
-              <img
-                src="dist/images/betterDesk_logo.webp"
-                alt="trello-userpic"
-              />
+              <img src="dist/images/betterDesk_logo.png" alt="trello-userpic" />
             </picture>
           </a>
           <figcaption class="creator-info">
@@ -421,13 +453,13 @@
         </div>
         <div class="social-links">
           <a href="javascript:void(0)"
-            ><img src="dist/images/twitter.webp" alt="twitter"
+            ><img src="dist/images/twitter.png" alt="twitter"
           /></a>
           <a href="javascript:void(0)"
-            ><img src="dist/images/facebook.webp" alt="facebook"
+            ><img src="dist/images/facebook.png" alt="facebook"
           /></a>
           <a href="javascript:void(0)"
-            ><img src="dist/images/linkedin.webp" alt="linkedin"
+            ><img src="dist/images/linkedin.png" alt="linkedin"
           /></a>
         </div>
       </div>
